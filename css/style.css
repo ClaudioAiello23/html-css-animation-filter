@@ -142,50 +142,59 @@
 /* --------------------------------------------------------------- */
 
 /* ESERCIZIO 10 - IMPOSTAZIONI BASE */
-/* .ex-10-icon {
+.ex-10-icon {
     font-size: 60px;
-}  */
+} 
 
 /* ESERCIZIO 10 - SVOLGIMENTO */
 .ex-10-icon {
-    font-size: 60px;
     animation-name: rotation;
-    animation-duration: 10s;
-    animation-timing-function: 10s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 } 
 
 @keyframes rotation{
-    0%{
-        transform: rotate(0deg);
+ 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
     }
-
-    25%{
-        transform: rotate(45deg);
-    }
-
-    50%{
-        transform: rotate(90deg);
-    }
-
-    75%{
-        transform: rotate(135deg);
-    }
-
-    100%{
-        transform: rotate(180deg);
-    }
-    
 } 
 
+/* ------------------------------------------------------------ */
 
-
-
-
-
-
+/* ESERCIZIO 11 - IMPOSTAZIONI BASE */
 .ex-11-icon {
     font-size: 60px;
 }
+
+/* ESERCIZIO 11 - SVOLGIMENTO */
+.ex-11-icon {
+    animation-name: comeback;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+} 
+
+@keyframes comeback{
+ 
+    0%{ 
+        transform: rotate(0deg); 
+        animation-timing-function: linear;
+       ;
+    } 
+    50% { 
+        transform: rotate(270deg); 
+    } 
+} 
+
+/* -------------------------------------------------------- */
+
+
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
