@@ -90,8 +90,7 @@
 /* ESERCIZIO 6 - SVOLGIMENTO */
 
 .ex-6-img:hover{
-    filter: blur(40px);
-    transition: 4s;
+    filter: grayscale(1);
 }
 
 /* ------------------------------------------------------------- */
@@ -103,8 +102,7 @@
 
 /* ESERCIZIO 7 - SVOLGIMENTO */
 .ex-7-img:hover{
-    opacity: 0.3;
-    filter: grayscale(1);
+    filter: blur(30px) grayscale(1);
     transition: 4s;
 }
 
@@ -137,24 +135,54 @@
     border-radius: 50%;
     border-top: 20px ridge black;
     border-bottom: 20px ridge blue;
-    filter: brightness(1.5);
+    filter: grayscale(1) opacity(0);
     transition: 7s;
 }
 
 /* --------------------------------------------------------------- */
 
 /* ESERCIZIO 10 - IMPOSTAZIONI BASE */
-.ex-10-icon {
+/* .ex-10-icon {
     font-size: 60px;
+}  */
 
 /* ESERCIZIO 10 - SVOLGIMENTO */
+.ex-10-icon {
+    font-size: 60px;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-timing-function: 10s;
+} 
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(45deg);
+    }
+
+    50%{
+        transform: rotate(90deg);
+    }
+
+    75%{
+        transform: rotate(135deg);
+    }
+
+    100%{
+        transform: rotate(180deg);
+    }
+    
+} 
 
 
 
 
 
 
-}
+
 .ex-11-icon {
     font-size: 60px;
 }
