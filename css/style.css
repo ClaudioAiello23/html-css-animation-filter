@@ -149,7 +149,7 @@
 /* ESERCIZIO 10 - SVOLGIMENTO */
 .ex-10-icon {
     animation-name: rotation;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 } 
@@ -191,10 +191,7 @@
 
 /* -------------------------------------------------------- */
 
-
-
-
-
+/* ESERCIZIO 12 - IMPOSTAZIONI BASE */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -224,3 +221,93 @@
     width: 60px;
     height: 20px;
 }
+
+
+/* ESERCIZIO 12 - SVOLGIMENTO */
+
+.ex-12-top-white:hover{
+    animation-name: topwhite_tw;
+    animation-duration: 4s;
+}
+
+.ex-12-bottom-white:hover{
+    animation-name: bottomwhite_tw;
+    animation-duration: 4s;
+
+}
+
+
+@keyframes topwhite_tw{
+    0% {
+        margin-left: 0;
+    } 
+
+    50% {
+        margin-left: 80px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+
+    
+}
+
+@keyframes bottomwhite_tw{
+    0% {
+        margin-right: 0;
+    } 
+
+    50% {
+        margin-right: 80px;
+    }
+
+    100% {
+        margin-right: 0;
+    }
+}
+
+/* nb nell'animazione devo usare l'hover direttamente
+sul top-white per spostarlo, ma non si sposta il top-bottom, e 
+viceversa quando faccio l'hover sul top-bottom non si sposta
+il top-white. */
+
+/* ---------------------------------------------------------- */
+
+/* ESERCIZIO 13 - IMPOSTAZIONI BASE */
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+
+/* ESERCIZIO 13 - SVOLGIMENTO */
+
+
+
+
